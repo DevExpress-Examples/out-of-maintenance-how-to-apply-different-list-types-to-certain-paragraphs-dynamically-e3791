@@ -2,20 +2,25 @@ using System;
 using System.Windows.Forms;
 using DevExpress.XtraRichEdit.API.Native;
 
-namespace RichEditSwitchListFormat {
-    public partial class Form1 : Form {
-        public Form1() {
+namespace RichEditSwitchListFormat
+{
+    public partial class Form1 : DevExpress.XtraEditors.XtraForm
+    {
+        public Form1()
+        {
             InitializeComponent();
 
             richEditControl1.Text = StringSample.SampleText;
             DefineAbstractLists(richEditControl1.Document);
         }
 
-        private void button1_Click(object sender, EventArgs e) {
+        private void button1_Click(object sender, EventArgs e)
+        {
             ApplyNextListToSelection(richEditControl1.Document);
         }
 
-        private void DefineAbstractLists(Document document) {
+        private void DefineAbstractLists(Document document)
+        {
             document.BeginUpdate();
 
             // Bulleted list
@@ -68,12 +73,14 @@ namespace RichEditSwitchListFormat {
             document.EndUpdate();
         }
 
-        private void ApplyNextListToSelection(Document document) {
+        private void ApplyNextListToSelection(Document document)
+        {
             document.BeginUpdate();
 
             ReadOnlyParagraphCollection paragraphs = document.Paragraphs.Get(document.Selection);
 
-            for (int i = 0; i < paragraphs.Count; i++) {
+            for (int i = 0; i < paragraphs.Count; i++)
+            {
                 int currentAbstractIndex = GetParagraphAbstractIndex(document, paragraphs[i]);
                 Paragraph previousParagraph = null;
 
@@ -86,13 +93,16 @@ namespace RichEditSwitchListFormat {
             document.EndUpdate();
         }
 
-        private int GetNextListIndex(Document document, int currentAbstractIndex, Paragraph previousParagraph) {
+        private int GetNextListIndex(Document document, int currentAbstractIndex, Paragraph previousParagraph)
+        {
             currentAbstractIndex++;
 
-            if (currentAbstractIndex == document.AbstractNumberingLists.Count) {
+            if (currentAbstractIndex == document.AbstractNumberingLists.Count)
+            {
                 return -1;
             }
-            else {
+            else
+            {
                 if (previousParagraph != null && currentAbstractIndex == GetParagraphAbstractIndex(document, previousParagraph))
                     return previousParagraph.ListIndex;
 
@@ -105,7 +115,8 @@ namespace RichEditSwitchListFormat {
             }
         }
 
-        private int GetParagraphAbstractIndex(Document document, Paragraph paragraph) {
+        private int GetParagraphAbstractIndex(Document document, Paragraph paragraph)
+        {
             if (!paragraph.IsInList)
                 return -1;
 
