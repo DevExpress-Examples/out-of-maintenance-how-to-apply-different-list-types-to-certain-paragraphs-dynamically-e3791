@@ -43,35 +43,26 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Data.v18.2">
+    <Reference Include="DevExpress.Data.v14.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Office.v18.2.Core">
+    <Reference Include="DevExpress.Office.v14.2.Core">
       <SpecificVersion>False</SpecificVersion>
-      
+      <HintPath>C:\Projects\2014.2\Bin\Framework4\DevExpress.Office.v14.2.Core.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.Pdf.v18.2.Core">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="DevExpress.RichEdit.v18.2.Export">
+    <Reference Include="DevExpress.Printing.v14.2.Core">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Printing.v18.2.Core">
+    <Reference Include="DevExpress.RichEdit.v14.2.Core">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.RichEdit.v18.2.Core">
+    <Reference Include="DevExpress.Utils.v14.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Utils.v18.2">
+    <Reference Include="DevExpress.XtraEditors.v14.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.XtraEditors.v18.2">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="DevExpress.Images.v18.2">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="DevExpress.XtraRichEdit.v18.2">
+    <Reference Include="DevExpress.XtraRichEdit.v14.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="System" />
