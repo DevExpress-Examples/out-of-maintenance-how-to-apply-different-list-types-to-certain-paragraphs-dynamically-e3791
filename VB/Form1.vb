@@ -4,7 +4,7 @@ Imports DevExpress.XtraRichEdit.API.Native
 
 Namespace RichEditSwitchListFormat
     Partial Public Class Form1
-        Inherits Form
+        Inherits DevExpress.XtraEditors.XtraForm
 
         Public Sub New()
             InitializeComponent()

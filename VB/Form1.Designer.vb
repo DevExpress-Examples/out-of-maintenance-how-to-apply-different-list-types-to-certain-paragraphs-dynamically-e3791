@@ -30,29 +30,32 @@
             ' richEditControl1
             ' 
             Me.richEditControl1.Anchor = (CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) Or System.Windows.Forms.AnchorStyles.Left) Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles))
-            Me.richEditControl1.Location = New System.Drawing.Point(12, 12)
+            Me.richEditControl1.Location = New System.Drawing.Point(9, 10)
+            Me.richEditControl1.Margin = New System.Windows.Forms.Padding(2)
             Me.richEditControl1.Name = "richEditControl1"
-            Me.richEditControl1.Size = New System.Drawing.Size(951, 424)
+            Me.richEditControl1.Size = New System.Drawing.Size(713, 344)
             Me.richEditControl1.TabIndex = 0
             Me.richEditControl1.Text = "richEditControl1"
             ' 
             ' button1
             ' 
             Me.button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-            Me.button1.Location = New System.Drawing.Point(390, 458)
+            Me.button1.Location = New System.Drawing.Point(288, 368)
+            Me.button1.Margin = New System.Windows.Forms.Padding(2)
             Me.button1.Name = "button1"
-            Me.button1.Size = New System.Drawing.Size(195, 25)
+            Me.button1.Size = New System.Drawing.Size(149, 34)
             Me.button1.TabIndex = 1
             Me.button1.Text = "Toggle selection list format "
             Me.button1.UseVisualStyleBackColor = True
             ' 
             ' Form1
             ' 
-            Me.AutoScaleDimensions = New System.Drawing.SizeF(8F, 16F)
+            Me.AutoScaleDimensions = New System.Drawing.SizeF(6F, 13F)
             Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-            Me.ClientSize = New System.Drawing.Size(975, 508)
+            Me.ClientSize = New System.Drawing.Size(731, 413)
             Me.Controls.Add(Me.button1)
             Me.Controls.Add(Me.richEditControl1)
+            Me.Margin = New System.Windows.Forms.Padding(2)
             Me.Name = "Form1"
             Me.Text = "Form1"
             Me.ResumeLayout(False)
